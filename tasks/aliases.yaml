@@ -1,0 +1,19 @@
+release:
+  - bump-only
+  - conventionalChangelog
+  - bump-commit
+
+release:patch:
+  - bump-only:patch
+  - conventionalChangelog
+  - bump-commit
+
+release:minor:
+  - bump-only:minor
+  - conventionalChangelog
+  - bump-commit
+
+release:major:
+  - bump-only:major
+  - conventionalChangelog
+  - bump-commit

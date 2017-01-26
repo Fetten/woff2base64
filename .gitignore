@@ -1,0 +1,16 @@
+# Dependency directories
+node_modules
+
+# Distribution
+lib
+
+# Tests
+test/tmp
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Common
+.idea
