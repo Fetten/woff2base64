@@ -1,6 +1,6 @@
 {
   "name": "woff2base64",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Generates CSS with woff2 and woff fonts embedded as Base64",
   "author": "Marcel Fetten <npm@marcelfetten.com> (https://www.fetten-meier.com)",
   "license": "MIT",
