@@ -2,6 +2,8 @@
 
 Generates CSS font-face with woff2 and woff fonts embedded as base64.
 
+[![Build Status](https://travis-ci.org/Fetten/woff2base64.svg?branch=master)](https://travis-ci.org/Fetten/woff2base64)
+
 ## Installation
 
 ```
