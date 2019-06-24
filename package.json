@@ -18,7 +18,13 @@
     "serve": "babel -w src -d lib",
     "lint": "eslint src",
     "mocha": "./node_modules/.bin/mocha --reporter spec --require @babel/register",
-    "test": "npm run lint && npm run mocha"
+    "test": "npm run lint && npm run mocha",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "release:patch": "release-it patch --src.tagName='v%s' --changelogCommand='yarn changelog'",
+    "release:minor": "release-it minor --src.tagName='v%s' --changelogCommand='yarn changelog'",
+    "release:major": "release-it major --src.tagName='v%s' --changelogCommand='yarn changelog'",
+    "release:major:alpha": "release-it major --preRelease=alpha --src.tagName='v%s' --changelogCommand='yarn changelog'",
+    "release:major:beta": "release-it major --preRelease=beta --src.tagName='v%s' --changelogCommand='yarn changelog'"
   },
   "repository": {
     "type": "git",
@@ -36,15 +42,11 @@
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.2",
     "chai": "^4.2.0",
+    "conventional-changelog-cli": "^2.0.21",
     "eslint": "^6.0.0",
     "glob": "^7.1.4",
-    "grunt": "^1.0.4",
-    "grunt-bump": "^0.8.0",
-    "grunt-conventional-changelog": "^6.1.0",
-    "jit-grunt": "^0.10.0",
-    "load-grunt-config": "^2.0.0",
     "mocha": "^6.1.4",
-    "time-grunt": "^2.0.0"
+    "release-it": "^12.3.0"
   },
   "engines": {
     "node": ">=8"
