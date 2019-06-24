@@ -1,27 +1,11 @@
 {
   "parser": "babel-eslint",
-  "ecmaFeatures": {
-    "blockBindings": true,
-    "arrowFunctions": true,
-    "classes": true,
-    "defaultParams": true,
-    "forOf": true,
-    "generators": true,
-    "modules": true,
-    "restParams": true,
-    "templateStrings": true,
-    "jsx": true
-  },
   "env": {
     "node": true
   },
   "globals": {},
   "rules": {
-    // Possible Errors
-    "comma-dangle": [
-      2,
-      "never"
-    ],
+    "comma-dangle": [2, "never"],
     "no-cond-assign": 2,
     "no-console": 1,
     "no-constant-condition": 2,
@@ -49,7 +33,6 @@
     "use-isnan": 2,
     "valid-jsdoc": 0,
     "valid-typeof": 2,
-    //Best Practices
     "accessor-pairs": 2,
     "block-scoped-var": 2,
     "consistent-return": 2,
@@ -102,7 +85,6 @@
     "vars-on-top": 0,
     "wrap-iife": 2,
     "yoda": 2,
-    // Variables
     "init-declarations": 0,
     "no-catch-shadow": 2,
     "no-delete-var": 2,
@@ -114,7 +96,6 @@
     "no-undef-init": 2,
     "no-unused-vars": 2,
     "no-use-before-define": 0,
-    // Stylistic
     "array-bracket-spacing": 1,
     "block-spacing": 2,
     "brace-style": 0,
@@ -147,23 +128,14 @@
     "no-trailing-spaces": 1,
     "no-underscore-dangle": 0,
     "no-unneeded-ternary": 2,
-    "object-curly-spacing": [
-      1,
-      "always"
-    ],
+    "object-curly-spacing": [1, "always"],
     "one-var": 0,
     "operator-assignment": 2,
     "operator-linebreak": 0,
     "padded-blocks": 0,
     "quote-props": 0,
-    "quotes": [
-      1,
-      "single"
-    ],
-    "semi": [
-      2,
-      "always"
-    ],
+    "quotes": [1, "single"],
+    "semi": [2, "always"],
     "semi-spacing": 0,
     "sort-vars": 0,
     "space-before-blocks": 2,
@@ -172,7 +144,6 @@
     "space-infix-ops": 2,
     "space-in-parens": 2,
     "space-unary-ops": 2,
-    // es6
     "arrow-parens": 2,
     "arrow-spacing": 2,
     "constructor-super": 2,
